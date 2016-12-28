@@ -5,7 +5,14 @@
 		}
 		.container {
 			padding-top:3%;
-		}	
+		}
+		header img {
+			width: 20px;
+    		height: auto !important;
+		}
+		header span {
+			font-size: 14px;
+		}
 	}
 	/*END OD NEW RESPONSIVE STYLE*/
 
@@ -34,7 +41,6 @@
  	/*REGISTER & LOGIN STYLE */
 header {
 	width: 100%;
-	position: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -51,3 +57,12 @@ header {
 	padding: 5%;
 }
 	/* END OF LOGIN STYLE*/
+
+	/* REGISTER STYLE*/
+.wrapReg,.wrapDesc {
+	padding: 2%;
+}
+.wrapReg {
+	border: 1px solid #3498db;
+}
+	/* END OF REGISTER STYLE*/
