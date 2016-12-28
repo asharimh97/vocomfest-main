@@ -974,6 +974,10 @@ ul.social-links {
 .tab-title, .tab-subtitle {
   display: block; }
 
+ul.event-schedule li {
+  padding-left: 25px;
+  list-style-image: url("../img/list.png"); }
+
 .tab-title {
   font-family: "Montserrat-Bold";
   font-size: 2em;
