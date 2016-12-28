@@ -181,6 +181,20 @@ html, body{
 		@include transition(0.25) ;
 	}
 }
+.btn-error-back{
+	color : $white ;
+	background: $blue ;
+	font-style: none ;
+	text-decoration: none ;
+	padding : 8px 20px ;
+	margin-top: 20px ;
+	@include transition(0.2) ;
+
+	&:hover{
+		color : $white ;
+		@include transition(0.2) ;
+	}
+}
 .btn-sep{
 	color : $white ;
 	text-decoration: none ;
