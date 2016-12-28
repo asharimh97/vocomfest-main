@@ -13,7 +13,9 @@ $red : #e74c3c ;
 $turq : #1abc9c ;
 $emerald : #2ecc71 ;
 $cloud : #ecf0f1 ;
+$lightcloud : #ebeff0 ;
 $gray : #7e8b8d ;
+$newgray : #94a4a6 ;
 
 @mixin transition($time){
 	transition: all $time*1s ease-in-out ;
@@ -323,6 +325,75 @@ ul.event-schedule{
 		}
 	}
 }
+.news-desc{
+	position: absolute ;
+	left : 0 ;
+	bottom : 0 ;
+	margin : 10px ;
+	color : $white ;
+	font-family: 'Montserrat' ;
+
+	.news-title{
+		position: relative ;
+		font-family: 'Montserrat-Bold' ;
+
+		a {
+			color : inherit ;
+			text-decoration : none ;
+			font-style: none ;
+
+			&:hover{
+				text-decoration : none ;
+			}
+		}
+	}
+}
+hr.bl-line-sep{
+	max-width : 40px ;
+	margin : 10px 0 ;
+	color : $blue ;
+	border : solid 2px $blue ;
+	color : $blue ;
+	fill : $blue ;
+}
+.news-img-inside{
+	width : 100% ;
+	border-radius: 5px ;
+	margin : 10px 0 0 0 ;
+}
+.news-img-rel{
+	width : 100% ;
+	border-top-left-radius: 5px ;
+	border-top-right-radius: 5px ;
+	margin : 0 ;
+}
+.related-frame{
+	background: $lightcloud ;
+	width: 100% ;	
+	overflow: hidden ;
+	padding : 15px 0px ;
+	border-bottom-right-radius: 5px ;
+	border-bottom-left-radius: 5px ;
+	@include transition(0.2) ;
+
+	h4{
+		font-family: 'Montserrat-Bold' ;
+		a{
+			color : $gray ;
+			text-decoration: none ;
+			font-style : none ;
+
+			&:hover{
+				color : $blue ;
+			}
+		}
+	}
+
+	&:hover{
+		background: #f3f4f4 ;
+		@include transition(0.2) ;
+	}
+}
 .gallery-content{
 	width : 23% ;
 	padding : 0px !important ;
@@ -364,27 +435,6 @@ ul.event-schedule{
 			@include transition(0.2) ;
 		}
 	}
-}
-.news-desc{
-	position: absolute ;
-	left : 0 ;
-	bottom : 0 ;
-	margin : 10px ;
-	color : $white ;
-	font-family: 'Montserrat' ;
-
-	.news-title{
-		position: relative ;
-		font-family: 'Montserrat-Bold' ;
-	}
-}
-hr.bl-line-sep{
-	max-width : 40px ;
-	margin : 10px 0 ;
-	color : $blue ;
-	border : solid 2px $blue ;
-	color : $blue ;
-	fill : $blue ;
 }
 .sponsor-image{
 	width : 100% ;
@@ -482,5 +532,11 @@ ul.inlinks{
 }
 #copyright{
 	background: #f0f0f0 ;
+	overflow: hidden ;
+}
+
+/* Content for news.html */
+#news-cover{
+	position : relative ;
 	overflow: hidden ;
 }
