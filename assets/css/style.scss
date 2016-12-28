@@ -13,7 +13,9 @@ $red : #e74c3c ;
 $turq : #1abc9c ;
 $emerald : #2ecc71 ;
 $cloud : #ecf0f1 ;
+$lightcloud : #ebeff0 ;
 $gray : #7e8b8d ;
+$newgray : #94a4a6 ;
 
 @mixin transition($time){
 	transition: all $time*1s ease-in-out ;
@@ -376,6 +378,16 @@ ul.event-schedule{
 	.news-title{
 		position: relative ;
 		font-family: 'Montserrat-Bold' ;
+
+		a {
+			color : inherit ;
+			text-decoration : none ;
+			font-style: none ;
+
+			&:hover{
+				text-decoration : none ;
+			}
+		}
 	}
 }
 hr.bl-line-sep{
@@ -482,5 +494,11 @@ ul.inlinks{
 }
 #copyright{
 	background: #f0f0f0 ;
+	overflow: hidden ;
+}
+
+/* Content for news.html */
+#news-cover{
+	position : relative ;
 	overflow: hidden ;
 }

@@ -6,6 +6,21 @@ html, body{
 	top : 0 ;
 	left : 0 ;
 }
+.rels{
+	position: relative !important;
+}
+.abss{
+	position : absolute !important;
+}
+.fixs{
+	position: fixed !important;
+}
+.news-container{
+	position : relative ;
+	margin : 0 auto ;
+	width : 1280px ;
+	height : 100% ;
+}
 .isCenter{
 	position: absolute;
 	overflow: hidden ;
@@ -194,5 +209,61 @@ html, body{
 		color : $blue ;
 		background: $white ;
 		@include transition(0.25) ;
+	}
+}
+.new-pagination{
+	font-family: 'Montserrat' ;
+	padding : 0 ;
+	margin : 0 ;
+	li{
+		position: relative ;
+		width : 60px ;
+		height: 60px ;
+		display: inline-block;
+		font-size: 1em ;
+		overflow: hidden ;
+		background: $lightcloud ;
+		margin : 0px 2.5px ;
+		border-radius: 50% ;
+		@include transition(0.2) ;
+
+		&:hover{
+			/*cursor : pointer ;*/
+			background: $blue ;
+			@include transition(0.2) ;
+
+			a{
+				color : $white ;
+				@include transition(0.2) ;
+			}
+		}
+
+		a{
+			color : $blue ;
+			position : absolute ;
+			text-decoration: none;
+			font-style: none ;
+			top : 50% ;
+			left : 50% ;
+			transform: translate(-50%, -50%);
+			@include transition(0.2) ;
+		}
+	}
+	li.active{
+		background: $blue ;
+		a{
+			color : $white ;
+		}
+	}
+	li.disabled{
+		color : $newgray ;
+		cursor: not-allowed;
+		&:hover{
+			background : $lightcloud ;
+		}
+		a{
+			cursor: not-allowed;
+			color : $newgray ;
+		}
 	}
 }

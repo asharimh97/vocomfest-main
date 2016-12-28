@@ -132,6 +132,21 @@ html, body {
   top: 0;
   left: 0; }
 
+.rels {
+  position: relative !important; }
+
+.abss {
+  position: absolute !important; }
+
+.fixs {
+  position: fixed !important; }
+
+.news-container {
+  position: relative;
+  margin: 0 auto;
+  width: 1280px;
+  height: 100%; }
+
 .isCenter {
   position: absolute;
   overflow: hidden;
@@ -328,6 +343,62 @@ html, body {
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out; }
+
+.new-pagination {
+  font-family: "Montserrat";
+  padding: 0;
+  margin: 0; }
+  .new-pagination li {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    font-size: 1em;
+    overflow: hidden;
+    background: #ebeff0;
+    margin: 0px 2.5px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out; }
+    .new-pagination li:hover {
+      /*cursor : pointer ;*/
+      background: #3498db;
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out; }
+      .new-pagination li:hover a {
+        color: #fff;
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out; }
+    .new-pagination li a {
+      color: #3498db;
+      position: absolute;
+      text-decoration: none;
+      font-style: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out; }
+  .new-pagination li.active {
+    background: #3498db; }
+    .new-pagination li.active a {
+      color: #fff; }
+  .new-pagination li.disabled {
+    color: #94a4a6;
+    cursor: not-allowed; }
+    .new-pagination li.disabled:hover {
+      background: #ebeff0; }
+    .new-pagination li.disabled a {
+      cursor: not-allowed;
+      color: #94a4a6; }
 
 /* Padding and margin setting */
 .mg-5 {
@@ -1080,6 +1151,12 @@ ul.event-schedule li {
   .news-desc .news-title {
     position: relative;
     font-family: "Montserrat-Bold"; }
+    .news-desc .news-title a {
+      color: inherit;
+      text-decoration: none;
+      font-style: none; }
+      .news-desc .news-title a:hover {
+        text-decoration: none; }
 
 hr.bl-line-sep {
   max-width: 40px;
@@ -1186,6 +1263,11 @@ ul.inlinks {
 
 #copyright {
   background: #f0f0f0;
+  overflow: hidden; }
+
+/* Content for news.html */
+#news-cover {
+  position: relative;
   overflow: hidden; }
 
 /*# sourceMappingURL=vocomfest-style.css.map */
