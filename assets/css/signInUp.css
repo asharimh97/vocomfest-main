@@ -1,0 +1,43 @@
+	/*NEW RESPONSIVE STYLE*/
+	@media screen and (max-width: 480px) {
+		.he-1 {
+			font-size: 1.8em;
+		}
+	}
+	/*END OD NEW RESPONSIVE STYLE*/
+
+	/*FORM STYLE*/
+ 		input[type="text"],input[type="password"],input[type="submit"] {
+ 			    background: none;
+    			border: none;
+    			width: 100%;
+ 		}
+ 		input[type="text"],input[type="password"] {
+    			border-bottom: 2px solid #3498db;
+    			width: 95%;
+ 		}
+ 		input[type="submit"] {
+ 			    border: 1px solid #3498db;
+ 		}
+ 	/*END OF FORM STYLE*/
+
+/* LOGIN STYLE*/
+header {
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrapLogin {
+	width: 100%;
+	height: 100vh;
+}
+.wrapForm {
+	background-color: #ebeff0;
+	padding: 5%;
+}
+.container {
+	padding-top:3%;
+}	
+/* END OF LOGIN STYLE*/

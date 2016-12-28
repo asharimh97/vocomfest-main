@@ -23,6 +23,8 @@
 	<link rel="stylesheet" href="./assets/css/owl.carousel.css">
 	<link rel="stylesheet" href="./assets/css/owl.theme.css">
 	<link rel="stylesheet" href="./assets/css/vocomfest-style.css">
+	<!-- CSS for LOGIN and REGISTER -->
+	<link rel="stylesheet" href="./assets/css/signInUp.css">
 	
 	<!-- JAVASCRIPT HERE -->
 	<script type="text/javascript" src="./assets/js/jquery.js"></script>
@@ -30,39 +32,51 @@
 </head>
 <body>
 <div class="wrapLogin">
-	<h1 class="mont-bold he-1">Login to Vocomfest</h1>
-	<div class="wrapForm col-4 col-md-5">
-		<form>
-			<div class="row">
-				<div class="col-6 col-md-6">
-					Leader email
+<!-- HEADER -->
+<header>
+	<a href="./index.html" class="navbar-brand">
+					<img src="./assets/img/icon-2.png" alt="Vocomfest" class="img-brand">
+					<span class="text-brand mont-bold">VOCOMFEST</span>
+				</a>
+</header>
+<!-- LOGIN -->
+	<div class="container isCenter col-md-12 col-xs-12">
+		<h1 class="blue text-center mont-bold he-1">Login to Vocomfest</h1>
+		<div class="wrapForm col-md-5 col-sm-8 force-center">
+			<form>
+				<div class="row mg-b-20">
+					<div class="col-md-5">
+						Leader email
+					</div>
+					<div class="col-md-7">
+						: <input type="text" name="">
+					</div>
 				</div>
-				<div class="col-6 col-md-6">
-					<input type="text" name="">
+				<div class="row mg-b-20">
+					<div class="col-md-5">
+						Password
+					</div>
+					<div class="col-md-7">
+						: <input type="password" name="">
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-6 col-md-6">
-					Password
+				<div class="row">
+					<label>
+						<div class="col-md-12">
+							<input type="checkbox" name="">
+						Remember me
+						</div>
+					</label>
 				</div>
-				<div class="col-6 col-md-6">
-					<input type="Password" name="">
+				<div class="row">
+					<div class="col-6 col-md-6 force-center">
+						<input class="btn btn-more mg-bt-15" type="submit" value="LOGIN" name="">
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<label>
-					<input type="checkbox" name="">
-					Remember me
-				</label>
-			</div>
-			<div class="row">
-				<div class="col-6 col-md-6">
-					<input type="submit" value="LOGIN" name="">
-				</div>
-			</div>
-			<p>Forgot Password? <a href="">Click here</a>!</p>
-			<p>Don't have any account? <a href="">Register</a>! or back to <a href="">home</a>?</p>
-		</form>
+				<p class="text-center ">Forgot Password? <a href="">Click here</a>!</p>
+				<p class="text-center ">Don't have any account? <a href="">Register</a>! or back to <a href="">home</a>?</p>
+			</form>
+		</div>
 	</div>
 </div>
 
