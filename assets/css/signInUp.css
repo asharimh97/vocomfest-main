@@ -23,7 +23,7 @@
  		label {
  			font-weight: normal;
  		}
- 		input[type="text"],input[type="password"],input[type="submit"] {
+ 		input[type="text"],input[type="password"],input[type="submit"],select {
  			    background: none;
     			border: none;
  		}
@@ -38,6 +38,18 @@
  		}
  		.inNum input[type="text"] {
  			width: 80%;
+ 		}
+ 		select {
+ 			width: 95%;
+    		padding: 5px;
+    		border: 1px solid #3498db;
+ 		}
+ 		input[type="radio"], label span{
+ 			float:left;
+ 		}
+ 		label span {
+ 			width:90%;
+ 			padding-left:7px; 
  		}
  	/*END OF FORM STYLE*/
 
@@ -69,6 +81,9 @@ header {
 	padding: 2%;
 }
 .wrapReg {
-	border: 1px solid #3498db;
+	/*border: 1px solid #3498db;*/
 }
-	/* END OF REGISTER STYLE*/
+.wrapDesc {
+	border-left: 2px solid #3498db;
+	}
+/* END OF REGISTER STYLE*/
