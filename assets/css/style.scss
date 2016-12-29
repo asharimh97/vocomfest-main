@@ -436,6 +436,18 @@ hr.bl-line-sep{
 		}
 	}
 }
+@media screen and (max-width: 990px){
+	.news-content, .gallery-content{
+		width : 45% ;
+		margin : 2% auto ;
+	}
+}
+@media screen and (max-width: 800px){
+	.news-content, .gallery-content{
+		width : 90% ;
+		margin : 3% 5% ;
+	}
+}
 .sponsor-image{
 	width : 100% ;
 	filter : grayscale(1);
@@ -478,6 +490,11 @@ hr.bl-line-sep{
 				padding-bottom : 5px ;
 			}
 		}
+	}
+}
+@media screen and (min-width: 1280px){
+	.loc-frame{
+		max-width : 25% ;
 	}
 }
 #links{
