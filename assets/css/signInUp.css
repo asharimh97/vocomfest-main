@@ -48,6 +48,9 @@ header {
 	justify-content: center;
 	align-items: center;
 }
+.no-m {
+	margin:0;
+}
  	/*END REGISTER & LOGIN STYLE */
 
 	/* LOGIN STYLE*/
