@@ -81,11 +81,11 @@
 <section id="news-body">
 	<div class="container pd-bt-20">
 		<div class="row pd-bt-20">
-			<div class="pd-bt-20 col-md-3">
+			<div class="pd-bt-20 col-md-3 padNav">
 
 <!-- Aside Nav -->
 		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
+		  <div class="container-fluid nopad">
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#asideNav">
 		        <span class="icon-bar"></span>
@@ -93,7 +93,7 @@
 		        <span class="icon-bar"></span>                        
 		      </button>
 		    </div>
-		    <div class="collapse navbar-collapse navEvent" id="asideNav">
+		    <div class="collapse navbar-collapse nopad navEvent" id="asideNav">
 		      <ul class="nav text-right mont-bold">
 						<li><a href="#one">Deskripsi</a></li>
 						<li><a href="#two">Syarat dan Ketentuan</a></li>
@@ -311,10 +311,10 @@
         //fixed nav
         $(window).scroll(function(){
         	console.log($(window).scrollTop());
-        	if($(window).scrollTop()>348){
+        	if($(window).scrollTop()>320){
         		$('#asideNav').addClass('fixedNav');
         	}
-        	if($(window).scrollTop()<348){
+        	if($(window).scrollTop()<320){
         		$('#asideNav').removeClass('fixedNav');
         	}
         });
