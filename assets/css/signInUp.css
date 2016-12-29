@@ -36,6 +36,9 @@
  			    border: 1px solid #3498db;
  			    width: 100%;
  		}
+ 		.inNum input[type="text"] {
+ 			width: 80%;
+ 		}
  	/*END OF FORM STYLE*/
 
  	/*REGISTER & LOGIN STYLE */
