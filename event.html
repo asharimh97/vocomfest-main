@@ -82,8 +82,8 @@
 	<div class="container pd-bt-20">
 		<div class="row pd-bt-20">
 			<div class="pd-bt-20 col-md-3">
-				<nav>
-					<ul class="nav nav-pills nav-stacked">
+				<nav id="asideNav" class="navEvent">
+					<ul class="nav text-right mont-bold">
 						<li><a href="#one">Deskripsi</a></li>
 						<li><a href="#two">Syarat dan Ketentuan</a></li>
 						<li><a href="#three">Jadwal Alur Perlombaan</a></li>
@@ -292,6 +292,17 @@
                     }
                 }
             });
+        });
+
+        //fixed nav
+        $(window).scroll(function(){
+        	console.log($(window).scrollTop());
+        	if($(window).scrollTop()>348){
+        		$('#asideNav').addClass('fixedNav');
+        	}
+        	if($(window).scrollTop()<348){
+        		$('#asideNav').removeClass('fixedNav');
+        	}
         });
 
 	}) ;

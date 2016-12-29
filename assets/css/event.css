@@ -1,3 +1,16 @@
+/*ASIDE NAV*/
+.navEvent li a {
+	transition: all 0.5s ease-in-out;
+}
+.navEvent li a:hover {
+	background-color: #337ab7;
+	color: #FFFFFF;
+}
+.fixedNav {
+	position: fixed;
+    top: 20px;
+    width:262px;
+}
 .divEvent {
 	padding: 20px 0;
 }
