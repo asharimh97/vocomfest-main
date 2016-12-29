@@ -1,4 +1,10 @@
 /*ASIDE NAV*/
+.navbar-default {
+	background: none;
+}
+.container-fluid, .navbar-collapse {
+	padding: 0px;
+}
 .navEvent li a {
 	transition: all 0.5s ease-in-out;
 }
@@ -14,3 +20,11 @@
 .divEvent {
 	padding: 20px 0;
 }
+/*Responsive*/
+@media screen and (max-width: 768px) {
+		.fixedNav {
+			position: relative;
+		    top: 0px;
+		    width:100%;
+		}
+	}
