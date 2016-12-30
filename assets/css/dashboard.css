@@ -6,7 +6,7 @@
 	height: 100vh;
 }
 #logo {
-	background-color: #EBEFF0;
+	background-color: #FFFFFF;
 }
 	#logo img {
 		width: 100%;
@@ -25,7 +25,7 @@
 	.active {
 		border-right: 5px solid #9BCCEE;
 	}
-	.nav-db li a i{
+	.nav-db i, span i{
 		width: 30px;
 		text-align: center;
 	}
@@ -41,5 +41,23 @@
 /*end of Aside STYLE*/
 
 /*CONTENT STYLE*/
-
+#content {
+	float: right;
+	background-color: #b3b3b3;
+}
+.content-db{
+	background-color: #EBEFF0;
+}
+.sec-content-db {
+	background-color: #FFFFFF;
+}
+.news-db {
+	position:relative;
+	background-color: #EBEFF0; 
+	max-height: 225px; 
+	overflow: hidden;
+}
+.bk-gr-overlay {
+	overflow: hidden;
+}
 /*END OF CONTENT STYLE*/
