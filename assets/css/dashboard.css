@@ -1,3 +1,45 @@
-#logo img {
-	width: 100%;
+/*Aside STYLE*/
+#aside {
+	position: fixed;
+	z-index: 10;
+	background-color: #3498db;
+	height: 100vh;
 }
+#logo {
+	background-color: #EBEFF0;
+}
+	#logo img {
+		width: 100%;
+	}
+#bAside {
+	color: #FFFFFF;
+}
+.nav-db li a {
+	color: #FFFFFF;
+	font-weight: bold;
+	transition: all 0.5s ease-in-out;
+}
+	.nav-db li a:hover {
+		color: #3498db;
+	}
+	.active {
+		border-right: 5px solid #9BCCEE;
+	}
+	.nav-db li a i{
+		width: 30px;
+		text-align: center;
+	}
+/*.users-icon {
+	border: 2px solid #FFFFFF;
+	border-radius: 100%;
+}*/
+.line-db{
+	margin-top: 0 !important;
+	width: 20%;
+    border: 1px solid #85b6e1;
+}
+/*end of Aside STYLE*/
+
+/*CONTENT STYLE*/
+
+/*END OF CONTENT STYLE*/

@@ -32,36 +32,40 @@
 </head>
 <body>
 <section id="aside" class="col-md-2 nopad">
-	<div id="logo" class="pd-20" style="background-color: lightblue">
+	<div id="logo" class="pd-20">
 		<div class="row force-center">
 			<a href="/index.html">
 				<img src="./assets/img/logoDb.png" alt="Vocomfest">
 			</a>
 		</div>
 	</div>
-	<div id="user">
-		<div>
-			<i class="fa fa-users"></i>
+	<div id="bAside" class="pd-bt-20">
+		<div id="user" class="text-center mg-b-20 pd-20">
+			<div class="users-icon sep-title">
+				<i class="fa fa-users"></i>
+			</div>
+			<h2>Team Name</h2>
+			<hr class="line-db">
+			<span>Leader</span>
+			<h4 class="nomag">Team Leader</h4>
 		</div>
-		<h2>Team Name</h2>
-		<h3>Team Leader</h3>
+		<!-- nav -->
+		<div id="navigation">
+			<nav>
+				<ul class="nav nav-db">
+					<li class="active"><a href=""><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+					<li><a href=""><i class="fa fa-users"></i><span>Team Members</span></a></li>
+					<li><a href=""><i class="fa fa-microphone"></i><span>Event</span></a></li>
+					<li><a href=""><i class="fa fa-hourglass-half"></i><span>News</span></a></li>
+					<li><a href=""><i class="fa fa-credit-card-alt"></i><span>Payment</span></a></li>
+					<li><a href=""><i class="fa fa-upload"></i><span>Upload</span></a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- /nav -->
 	</div>
-	<!-- nav -->
-	<div id="navigation">
-		<nav>
-			<ul>
-				<li><a href=""><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-				<li><a href=""><i class="fa fa-users"></i><span>Team Members</span></a></li>
-				<li><a href=""><i class="fa fa-microphone"></i><span>Event</span></a></li>
-				<li><a href=""><i class="fa fa-hourglass-half"></i><span>News</span></a></li>
-				<li><a href=""><i class="fa fa-credit-card-alt"></i><span>Payment</span></a></li>
-				<li><a href=""><i class="fa fa-upload"></i><span>Upload</span></a></li>
-			</ul>
-		</nav>
-	</div>
-	<!-- /nav -->
 </section>
-<section id="content" class="col-md-10" style="background-color: salmon">
+<section id="content" class="col-md-10" style="background-color: salmon; float: right">
 	<h1>Ini Content</h1>
 </section>
 <!-- JAVASCRIPT HERE -->
@@ -104,7 +108,6 @@
                 }
             });
         });
-
         //fixed nav
         $(window).scroll(function(){
         	console.log($(window).scrollTop());
