@@ -7,6 +7,7 @@
 }
 #logo {
 	background-color: #FFFFFF;
+	display: flex;
 }
 	#logo img {
 		width: 100%;
@@ -14,9 +15,12 @@
 #bAside {
 	color: #FFFFFF;
 }
+.navbar-default {
+	background-color: #3498db;
+}
 .nav-db li a {
+	font-family: 'Montserrat';
 	color: #FFFFFF;
-	font-weight: bold;
 	transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -68,7 +72,7 @@
 }
 a.a-fa {
 	font-weight: bold;
-	color:#3497db;
+	color:#FFFFFF;
     padding: 3px 9px 3px 3px;
     border-radius: 5px;
     border: 1px solid #3498db;
@@ -78,6 +82,7 @@ a.a-fa {
     -o-transition: all 0.3s ease-in-out;
 }
 a.a-fa:hover {
+    color:#3497db;
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     text-decoration: none;
@@ -88,7 +93,7 @@ a.a-fa:hover {
 }
 .content-db{
 	background-color: #EBEFF0;
-	padding: 20px;
+	padding: 0 20px;
 }
 .sec-content-db {
 	background-color: #FFFFFF;
@@ -161,3 +166,26 @@ a.a-fa:hover {
 	}
 /*END OF CONTENT STYLE*/
 /*RESPONSIVE STYLE*/
+@media screen and (max-width: 1152px) {
+	.header-db img{
+		width: auto;
+		height: 100%;
+	}
+	.beFull {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 992px){
+	.add-pd-b {
+		padding-bottom: 15px;
+	}
+}
+@media screen and (max-width: 768px) {
+	#aside {
+		position: relative;
+		height: auto;
+	}
+	#logo img {
+		width: 200px;
+	}
+}

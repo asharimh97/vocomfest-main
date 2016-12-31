@@ -31,7 +31,7 @@
 	<script type="text/javascript" src="./assets/js/loader.js"></script>
 </head>
 <body>
-<section id="aside" class="col-md-2 nopad">
+<section id="aside" class="col-md-2 col-sm-2 nopad">
 	<div id="logo" class="pd-20">
 		<div class="row force-center">
 			<a href="/index.html">
@@ -51,6 +51,28 @@
 		</div>
 		<!-- nav -->
 		<div id="navigation">
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid nopad">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#asideNav">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			    </div>
+			    <div class="collapse navbar-collapse nopad" id="asideNav">
+			      <ul class="nav nav-db">
+					<li class="active"><a href=""><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+					<li><a href=""><i class="fa fa-users"></i><span>Team Members</span></a></li>
+					<li><a href=""><i class="fa fa-microphone"></i><span>Event</span></a></li>
+					<li><a href=""><i class="fa fa-hourglass-half"></i><span>News</span></a></li>
+					<li><a href=""><i class="fa fa-credit-card-alt"></i><span>Payment</span></a></li>
+					<li><a href=""><i class="fa fa-upload"></i><span>Upload</span></a></li>
+				</ul>
+			    </div>
+			  </div>
+			</nav>
+			<!-- 
 			<nav>
 				<ul class="nav nav-db">
 					<li class="active"><a href=""><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
@@ -61,11 +83,12 @@
 					<li><a href=""><i class="fa fa-upload"></i><span>Upload</span></a></li>
 				</ul>
 			</nav>
+			-->
 		</div>
 		<!-- /nav -->
 	</div>
 </section>
-<section id="content" class="col-md-10 nopad">
+<section id="content" class="col-md-10 col-sm-10 nopad">
 	<header class="header-db">
 		<img src="./assets/img/event-cover.jpg" alt="News Vocomfest" class="cover-img">
 		<div class="overlay bk-gr-overlay"  style=""></div>
@@ -80,7 +103,7 @@
 	<div class="content-db">
 		<div class="row">
 		<!-- 1# section -->
-			<section class="col-md-6 pd-lr-15">
+			<section class="col-md-6 beFull pd-t-15 pd-lr-15">
 				<div class="sec-content-db">
 					<span class="title-sec-db"><i class="fa fa-hourglass-half"></i>News</span>
 					<div class="div-content-db">
@@ -97,7 +120,7 @@
 						</a>
 					</div>
 					<div class="row pd-t-15">
-						<div class="col-md-6">
+						<div class="col-md-6 add-pd-b">
 							<a href="blog.html" alt="News Vocomfest" title="News Vocomfest">
 								<div class="news-db">
 									<div class="overlay bk-gr-overlay"></div>
@@ -129,7 +152,7 @@
 			</section>
 		<!-- /1# section -->
 		<!-- 2# section -->
-			<section class="col-md-6 pd-lr-15">
+			<section class="col-md-6 beFull pd-t-15 pd-lr-15">
 				<div class="sec-content-db">
 					<span class="title-sec-db"><i class="fa fa-microphone"></i>Event</span>
 					<div class="div-content-db">
@@ -143,14 +166,14 @@
 				</div>
 				<div class="row pd-bt-20">
 				<!-- Team Members -->
-					<section class="col-md-7">
+					<section class="col-md-7 add-pd-b">
 						<div class="sec-content-db">
 							<span class="title-sec-db"><i class="fa fa-users"></i>Team Members</span>
-							<div class="row pd-t-15 pd-lr-15">
-								<figure class="col-md-3 img-profile">
+							<div class="row content-center">
+								<figure class="col-md-3 col-sm-4 col-sm-offset-2 col-xs-4 img-profile">
 									<img src="./assets/img/gallery-img.jpg">
 								</figure>
-								<span class="col-md-9 span-right">
+								<span class="col-md-9 col-sm-4 col-xs-6 span-right">
 									<div class="pd-l-15">
 										<p class="nomag mont-bold">Leader Name</p>
 										<p class="nomag"><span class="blue">Leader</span> | mail@mail.com</p>
@@ -158,11 +181,11 @@
 									</div>
 								</span>
 							</div>
-							<div class="row pd-t-15 pd-lr-15">
-								<figure class="col-md-3 img-profile">
+							<div class="row content-center">
+								<figure class="col-md-3 col-sm-4 col-sm-offset-2 col-xs-4 img-profile">
 									<img src="./assets/img/gallery-img.jpg">
 								</figure>
-								<span class="col-md-9 span-right">
+								<span class="col-md-9 col-sm-4 col-xs-6 span-right">
 									<div class="pd-l-15">
 										<p class="nomag mont-bold">Member Name</p>
 										<p class="nomag"><span class="blue">Member</span> | mail@mail.com</p>
@@ -170,11 +193,11 @@
 									</div>
 								</span>
 							</div>
-							<div class="row pd-t-15 pd-lr-15">
-								<figure class="col-md-3 img-profile">
+							<div class="row content-center">
+								<figure class="col-md-3 col-sm-4 col-sm-offset-2 col-xs-4 img-profile">
 									<img src="./assets/img/gallery-img.jpg">
 								</figure>
-								<span class="col-md-9 span-right">
+								<span class="col-md-9 col-sm-4 col-xs-6 span-right">
 									<div class="pd-l-15">
 										<p class="nomag mont-bold">Member Name</p>
 										<p class="nomag"><span class="blue">Member</span> | mail@mail.com</p>
@@ -190,10 +213,10 @@
 						<div class="sec-content-db">
 							<span class="title-sec-db"><i class="fa fa-bar-chart"></i>Progress</span>
 							<div class="row content-center">
-								<div class="col-md-3 i-center">
+								<div class="col-md-3 col-xs-4 i-center">
 								<i class="fa fa-user he-1"></i>
 								</div>
-								<span class="col-md-9 span-right">
+								<span class="col-md-9 col-xs-8 span-right">
 									<div class="pd-l-15">
 										<p class="nomag mont-bold">Registration</p>
 										<p class="nomag">Status : Registered</p>
@@ -201,10 +224,10 @@
 								</span>
 							</div>
 							<div class="row content-center">
-								<div class="col-md-3 i-center">
+								<div class="col-md-3 col-xs-4 i-center">
 								<i class="fa fa-credit-card-alt he-1"></i>
 								</div>
-								<span class="col-md-9 span-right">
+								<span class="col-md-9 col-xs-8 span-right">
 									<div class="pd-l-15">
 										<p class="nomag mont-bold">Payment</p>
 										<p class="nomag">Status : -</p>
@@ -213,10 +236,10 @@
 								</span>
 							</div>
 							<div class="row content-center">
-								<div class="col-md-3 i-center">
+								<div class="col-md-3 col-xs-4 i-center">
 								<i class="fa fa-upload he-1"></i>
 								</div>
-								<span class="col-md-9 span-right">
+								<span class="col-md-9 col-xs-8 span-right">
 									<div class="pd-l-15">
 										<p class="nomag mont-bold">Upload</p>
 										<p class="nomag">Status : -</p>
