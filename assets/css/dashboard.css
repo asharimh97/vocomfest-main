@@ -126,9 +126,38 @@ a.a-fa:hover {
 	.img-profile img {
 		width: 100%;
 	}
+.content-center {
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.i-center {
+	padding: 0px !important;
+	margin: 0px !important;
+	text-align: center;
+	color: #3498db;
+	min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .span-right {
 	padding: 0px !important;
 	margin: 0px !important;
 	float: right;
 }
+	.span-right p a{
+		transition: all 0.3s ease-in-out;
+	    -webkit-transition: all 0.3s ease-in-out;
+	    -moz-transition: all 0.3s ease-in-out;
+	    -o-transition: all 0.3s ease-in-out;
+	}
+	.span-right p a:hover{
+		text-decoration: none;
+		font-weight: bold;
+	}
 /*END OF CONTENT STYLE*/
+/*RESPONSIVE STYLE*/
