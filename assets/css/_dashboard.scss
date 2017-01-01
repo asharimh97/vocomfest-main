@@ -1,43 +1,57 @@
+/* Dashboard Style */
+
 /*Aside STYLE*/
 #aside {
 	position: fixed;
 	z-index: 10;
-	background-color: #3498db;
+	background-color: $blue;
 	height: 100vh;
 }
 #logo {
-	background-color: #FFFFFF;
+	background-color: $white;
 	display: flex;
-}
-	#logo img {
+
+	img {
 		width: 100%;
 	}
+}
 #bAside {
-	color: #FFFFFF;
+	color: $white;
 }
 .navbar-default-blue {
-	background-color: #3498db;
+	background-color: $blue;
 }
-.nav-db li a {
+.nav-db li {
 	font-family: 'Montserrat';
-	color: #FFFFFF;
-	transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+	color: $white;
+	@include transition(0.3) ;
+
+	a{
+		color : $white ;
+		@include transition(0.3) ;
+		border-right : solid 5px transparent ;
+
+		&:hover{
+			color : $blue ;
+			border-color : #9BCCEE ;
+			@include transition(0.3) ;
+		}
+	}
+
 }
-	.nav-db li a:hover {
-		color: #3498db;
+.nav-db li.active {
+	a {
+		color : $blue ;
+		background: $white ;
+		border-color: #9BCCEE ;
 	}
-	.active {
-		border-right: 5px solid #9BCCEE;
-	}
+}
 	.nav-db i, span i{
 		width: 30px;
 		text-align: center;
 	}
 /*.users-icon {
-	border: 2px solid #FFFFFF;
+	border: 2px solid $white;
 	border-radius: 100%;
 }*/
 .line-db{
@@ -59,7 +73,7 @@
 	left: 0;
 	width: 100%;
 	padding: 20px;
-	color: #FFFFFF;
+	color: $white;
 }
 .header-db img {
 	position: absolute;
@@ -72,20 +86,18 @@
 }
 a.a-fa {
 	font-weight: bold;
-	color:#FFFFFF;
+	color:$white;
     padding: 3px 9px 3px 3px;
     border-radius: 5px;
     border: 1px solid #fff;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+    @include transition(0.3) ;
 }
 a.a-fa:hover {
     color:#3497db;
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     text-decoration: none;
+    @include transition(0.3) ;
 }
 #content {
 	float: right;
@@ -96,13 +108,13 @@ a.a-fa:hover {
 	padding: 0 20px;
 }
 .sec-content-db {
-	background-color: #FFFFFF;
+	background-color: $white;
 	padding: 15px;
 }
 .title-sec-db {
 	font-family: 'Montserrat-Bold' !important;
 	font-size: 1.2em;
-	color: #3498db;
+	color: $blue;
 }
 .div-content-db {
 	padding-top: 15px;
@@ -127,10 +139,11 @@ a.a-fa:hover {
 	margin: 0px !important;
 	overflow: hidden;
 	border-radius: 100%;
-}
-	.img-profile img {
+
+	img {
 		width: 100%;
 	}
+}
 .content-center {
 	padding-top: 15px;
 	padding-right: 15px;
@@ -143,7 +156,7 @@ a.a-fa:hover {
 	padding: 0px !important;
 	margin: 0px !important;
 	text-align: center;
-	color: #3498db;
+	color: $blue;
 	min-height: 70px;
     display: flex;
     justify-content: center;
@@ -153,17 +166,19 @@ a.a-fa:hover {
 	padding: 0px !important;
 	margin: 0px !important;
 	float: right;
-}
-	.span-right p a{
+
+	p a{
 		transition: all 0.3s ease-in-out;
 	    -webkit-transition: all 0.3s ease-in-out;
 	    -moz-transition: all 0.3s ease-in-out;
 	    -o-transition: all 0.3s ease-in-out;
+
+	    &:hover{
+			text-decoration: none;
+			font-weight: bold;
+		}
 	}
-	.span-right p a:hover{
-		text-decoration: none;
-		font-weight: bold;
-	}
+}
 /*END OF CONTENT STYLE*/
 /*RESPONSIVE STYLE*/
 @media screen and (max-width: 1152px) {

@@ -730,7 +730,7 @@
 </section>
 <!-- Contact Us -->
 <section id="contact">
-	<!-- <div id="locationmap"></div> -->
+	<div id="locationmap"></div>
 	<div class="overlay bk-half-overlay"></div>
 	<div class="container">
 		<div class="loc-frame">
@@ -923,23 +923,23 @@
             });
         });
 	}) ;
-	// function initMap() {
-	//   var map = new google.maps.Map(document.getElementById('locationmap'), {
-	//     zoom: 16,
-	//     center: {lat: -7.775068, lng: 110.374328},
-	//     zoomControl: false,
-	// 	mapTypeControl: false,
-	// 	scaleControl: false,
-	// 	streetViewControl: false,
-	// 	rotateControl: false,
-	// 	fullscreenControl: false
-	//   });
-	//   var marker = new google.maps.Marker({
- //          position: {lat: -7.7742, lng: 110.3747},
- //          map: map
- //        });
-	// }
+	function initMap() {
+	  var map = new google.maps.Map(document.getElementById('locationmap'), {
+	    zoom: 16,
+	    center: {lat: -7.775068, lng: 110.374328},
+	    zoomControl: false,
+		mapTypeControl: false,
+		scaleControl: false,
+		streetViewControl: false,
+		rotateControl: false,
+		fullscreenControl: false
+	  });
+	  var marker = new google.maps.Marker({
+          position: {lat: -7.7742, lng: 110.3747},
+          map: map
+        });
+	}
 </script>
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4tWhdW76TiS2KYubptsCvfkRpVcjlW0c&callback=initMap"></script> -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4tWhdW76TiS2KYubptsCvfkRpVcjlW0c&callback=initMap"></script>
 </body>
 </html>
