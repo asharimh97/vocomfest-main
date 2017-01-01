@@ -1,11 +1,14 @@
 /*ASIDE NAV*/
-.navbar-default {
-	background: none;
+/*.navbar-default {
+	background: #fff;
+}*/
+.navbar-side-default{
+	background: #fff ;
 }
 .navEvent li a {
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
-.navEvent li a:hover {
+.navEvent li a:hover, .navEvent li.active a, .navEvent li a:focus, .navEvent li a:active{
 	background-color: #337ab7;
 	color: #FFFFFF;
 }

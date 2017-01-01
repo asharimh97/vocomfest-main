@@ -8,7 +8,7 @@
 	<meta name="author" content="Vocomfest Technical Support Team">
 	<meta name="robots" content="index,follow">
 
-	<title>Vocomfest Event</title>
+	<title>Vocomfest - Mobile Apps Development Competition</title>
 
 	<!-- Shortcut icon -->
 	<link rel="shortcut icon" type="x-icon" href="./assets/img/icon-2.png">
@@ -23,8 +23,6 @@
 	<link rel="stylesheet" href="./assets/css/owl.carousel.css">
 	<link rel="stylesheet" href="./assets/css/owl.theme.css">
 	<link rel="stylesheet" href="./assets/css/vocomfest-style.css">
-	<!-- CSS EVENT-->
-	<link rel="stylesheet" href="./assets/css/event.css">
 	
 	<!-- JAVASCRIPT HERE -->
 	<script type="text/javascript" src="./assets/js/jquery.js"></script>
@@ -43,12 +41,12 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="/index.html" class="navbar-brand">
+					<a href="./index.html" class="navbar-brand">
 						<img src="./assets/img/icon-2.png" alt="Vocomfest" class="img-brand">
 						<span class="text-brand">VOCOMFEST</span>
 					</a>
 				</div>
-				<div class="collapse navbar-collapse" id="navar-top">
+				<div class="collapse navbar-collapse" id="navbar-top">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="index.html#header">HOME</a></li>
 						<li><a href="index.html#about">ABOUT</a></li>
@@ -70,8 +68,8 @@
 	<div class="overlay bk-overlay">
 		<div class="news-container">
 			<div class="news-desc">
-				<h2 class="mont-bold sep-title thenNo">WDC</h2>
-				<h3 class="mont-bold more-bigger thenSmall">Web Design Competition</h3>
+				<h2 class="mont-bold sep-title thenNo">MADC</h2>
+				<h3 class="mont-bold more-bigger thenSmall">Mobile Apps Development Competition</h3>
 				<hr class="bl-line-sep thenNo">
 			</div>
 		</div>
@@ -84,7 +82,7 @@
 			<div class="pd-bt-20 col-md-3 padNav">
 
 <!-- Aside Nav -->
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-side-default">
 		  <div class="container-fluid nopad">
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#asideNav">
@@ -97,10 +95,8 @@
 		      <ul class="nav text-right mont-bold">
 						<li><a href="#one">Deskripsi</a></li>
 						<li><a href="#two">Syarat dan Ketentuan</a></li>
-						<li><a href="#three">Jadwal Alur Perlombaan</a></li>
-						<li><a href="#four">Pengumpulan Aplikasi</a></li>
-						<li><a href="#five">Kriteria Penilaian</a></li>
-						<li><a href="#six">Alur Pendaftaran</a></li>
+						<li><a href="#three">Pendaftaran</a></li>
+						<li><a href="#four">FAQ</a></li>
 					</ul>
 		    </div>
 		  </div>
@@ -310,6 +306,10 @@
 		//lightcase lightbox
 		$('a[data-rel^=lightcase]').lightcase();
 
+		$('body').scrollspy({
+			target : '#asideNav'
+		}) ;
+
 		// nicescroll js
 		$("html").niceScroll({
 			cursorcolor : 'rgba(0,0,0,0.5)',
@@ -338,7 +338,6 @@
 
         //fixed nav
         $(window).scroll(function(){
-        	console.log($(window).scrollTop());
         	if($(window).scrollTop()>320){
         		$('#asideNav').addClass('fixedNav');
         	}

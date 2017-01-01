@@ -29,6 +29,7 @@
 	<script type="text/javascript" src="./assets/js/loader.js"></script>
 </head>
 <body>
+<div class="se-pre-con"></div>
 <!-- Header, hero content -->
 <section id="header">
 	<div class="hero-cover">
@@ -62,12 +63,43 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="/index.html" class="navbar-brand">
+				<a href="./index.html" class="navbar-brand">
 					<img src="./assets/img/icon-2.png" alt="Vocomfest" class="img-brand">
 					<span class="text-brand">VOCOMFEST</span>
 				</a>
 			</div>
-			<div class="collapse navbar-collapse" id="navar-top">
+			<div class="collapse navbar-collapse" id="navbar-top">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#header">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#events">EVENTS</a></li>
+					<li><a href="#timeline">TIMELINE</a></li>
+					<li><a href="#news">NEWS</a></li>
+					<li><a href="#gallery">GALLERY</a></li>
+					<li><a href="#sponsors">SPONSORS</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+					<li><a href="./register.html">REGISTER</a></li>
+					<li><a href="./login.html">LOGIN</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<nav id="float-nav" class="navbar navbar-default pd-bt-10 animated slideOutUp">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="./index.html" class="navbar-brand">
+					<img src="./assets/img/icon-2.png" alt="Vocomfest" class="img-brand">
+					<span class="text-brand">VOCOMFEST</span>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-top">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="#header">HOME</a></li>
 					<li><a href="#about">ABOUT</a></li>
@@ -155,7 +187,7 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, explicabo, recusandae! Reiciendis dolore vel perferendis obcaecati, dolores ex. Saepe iusto pariatur omnis ex, sapiente nesciunt distinctio libero vel eum ullam!
 					</p>
 					<p>
-						<a href="./event.html" class="btn btn-default btn-sm">READ MORE</a>
+						<a href="./event-wdc.html" class="btn btn-default btn-sm">READ MORE</a>
 					</p>
 				</div>
 				<div class="col-md-3 text-center event-point">
@@ -169,7 +201,7 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, explicabo, recusandae! Reiciendis dolore vel perferendis obcaecati, dolores ex. Saepe iusto pariatur omnis ex, sapiente nesciunt distinctio libero vel eum ullam!
 					</p>
 					<p>
-						<a href="./event.html" class="btn btn-default btn-sm">READ MORE</a>
+						<a href="./event-icpc.html" class="btn btn-default btn-sm">READ MORE</a>
 				</div>
 				<div class="col-md-3 text-center event-point">
 					<div class="row pd-bt-15">
@@ -182,7 +214,7 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, explicabo, recusandae! Reiciendis dolore vel perferendis obcaecati, dolores ex. Saepe iusto pariatur omnis ex, sapiente nesciunt distinctio libero vel eum ullam!
 					</p>
 					<p>
-						<a href="./event.html" class="btn btn-default btn-sm">READ MORE</a>
+						<a href="./event-madc.html" class="btn btn-default btn-sm">READ MORE</a>
 				</div>
 				<div class="col-md-3 text-center event-point">
 					<div class="row pd-bt-15">
@@ -195,7 +227,7 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, explicabo, recusandae! Reiciendis dolore vel perferendis obcaecati, dolores ex. Saepe iusto pariatur omnis ex, sapiente nesciunt distinctio libero vel eum ullam!
 					</p>
 					<p>
-						<a href="./event.html" class="btn btn-default btn-sm">READ MORE</a>
+						<a href="./event-semnas.html" class="btn btn-default btn-sm">READ MORE</a>
 				</div>
 			</div>
 		</div>
@@ -826,6 +858,27 @@
 <script type="text/javascript" src="./assets/js/owl.carousel.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
+		// scroll spy for navbar
+		// $('#float-nav').hide() ;
+		$(window).scroll(function(){
+			if($(window).scrollTop() > $('#header').innerHeight() + $('#main-nav').innerHeight()){
+				$('#float-nav').removeClass('animated slideOutUp') ;
+				$('#float-nav').addClass('animated slideInDown') ;
+			}else{
+				$('#float-nav').removeClass('animated slideInDown') ;
+				$('#float-nav').addClass('animated slideOutUp') ;
+			}
+			// if($(window).scrollTop() > $('#header').innerHeight()){
+			// 	$('#navbar').addClass('fixed-nav') ;
+			// }else{
+			// 	$('#navbar').removeClass('fixed-nav') ;
+			// }
+		}) ;
+		$('body').scrollspy({
+			target : '#float-nav'
+		}) ;
+
+
 		// wow js
 		new WOW().init() ;
 
