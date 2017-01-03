@@ -34,7 +34,7 @@
 <section id="aside" class="col-md-2 col-sm-2 nopad">
 	<div id="logo" class="pd-20">
 		<div class="row force-center">
-			<a href="/index.html">
+			<a href="./index.html">
 				<img src="./assets/img/logoDb.png" alt="Vocomfest">
 			</a>
 		</div>
@@ -295,16 +295,6 @@
                     }
                 }
             });
-        });
-        //fixed nav
-        $(window).scroll(function(){
-        	console.log($(window).scrollTop());
-        	if($(window).scrollTop()>320){
-        		$('#asideNav').addClass('fixedNav');
-        	}
-        	if($(window).scrollTop()<320){
-        		$('#asideNav').removeClass('fixedNav');
-        	}
         });
 
 	}) ;
