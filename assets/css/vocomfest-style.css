@@ -1546,4 +1546,204 @@ label span {
   color: #3498db;
   font-size: 6em; }
 
+/* Dashboard */
+/* Dashboard Style */
+/*Aside STYLE*/
+#aside {
+  position: fixed;
+  z-index: 10;
+  background-color: #3498db;
+  height: 100vh; }
+
+#logo {
+  background-color: #fff;
+  display: flex; }
+  #logo img {
+    width: 100%; }
+
+#bAside {
+  color: #fff; }
+
+.navbar-default-blue {
+  background-color: #3498db; }
+
+.nav-db li {
+  font-family: 'Montserrat';
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+  .nav-db li a {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    border-right: solid 5px transparent; }
+    .nav-db li a:hover {
+      color: #3498db;
+      border-color: #9BCCEE;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out; }
+
+.nav-db li.active a {
+  color: #3498db;
+  background: #fff;
+  border-color: #9BCCEE; }
+
+.nav-db i, span i {
+  width: 30px;
+  text-align: center; }
+
+/*.users-icon {
+	border: 2px solid $white;
+	border-radius: 100%;
+}*/
+.line-db {
+  margin-top: 0 !important;
+  width: 20%;
+  border: 1px solid #85b6e1; }
+
+/*end of Aside STYLE*/
+/*CONTENT STYLE*/
+.header-db {
+  position: relative;
+  overflow: hidden;
+  min-height: 137px; }
+
+.header-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: #fff; }
+
+.header-db img {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.top-header {
+  text-align: right;
+  width: 100%; }
+
+a.a-fa {
+  font-weight: bold;
+  color: #fff;
+  padding: 3px 9px 3px 3px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
+a.a-fa:hover {
+  color: #3497db;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
+#content {
+  float: right;
+  background-color: #b3b3b3; }
+
+.content-db {
+  background-color: #EBEFF0;
+  padding: 0 20px; }
+
+.sec-content-db {
+  background-color: #fff;
+  padding: 15px; }
+
+.title-sec-db {
+  font-family: 'Montserrat-Bold' !important;
+  font-size: 1.2em;
+  color: #3498db; }
+
+.div-content-db {
+  padding-top: 15px; }
+
+.news-db {
+  position: relative;
+  background-color: #EBEFF0;
+  max-height: 246.8px;
+  overflow: hidden; }
+
+.bk-gr-overlay {
+  overflow: hidden; }
+
+.news-db:hover .bk-gr-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); }
+
+.img-profile {
+  padding: 0px !important;
+  margin: 0px !important;
+  overflow: hidden;
+  border-radius: 100%; }
+  .img-profile img {
+    width: 100%; }
+
+.content-center {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.i-center {
+  padding: 0px !important;
+  margin: 0px !important;
+  text-align: center;
+  color: #3498db;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.span-right {
+  padding: 0px !important;
+  margin: 0px !important;
+  float: right; }
+  .span-right p a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; }
+    .span-right p a:hover {
+      text-decoration: none;
+      font-weight: bold; }
+
+/*END OF CONTENT STYLE*/
+/*RESPONSIVE STYLE*/
+@media screen and (max-width: 1152px) {
+  .header-db img {
+    width: auto;
+    height: 100%; }
+
+  .beFull {
+    width: 100%; } }
+@media screen and (max-width: 992px) {
+  .add-pd-b {
+    padding-bottom: 15px; } }
+@media screen and (max-width: 768px) {
+  #aside {
+    position: relative;
+    height: auto; }
+
+  #logo img {
+    width: 200px; } }
+
 /*# sourceMappingURL=vocomfest-style.css.map */
