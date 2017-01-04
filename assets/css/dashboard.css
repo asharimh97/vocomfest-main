@@ -29,9 +29,6 @@
 	.nav-db li a:hover {
 		color: #3498db;
 	}
-	.active {
-		border-right: 5px solid #9BCCEE;
-	}
 	.nav-db i, span i{
 		width: 30px;
 		text-align: center;
