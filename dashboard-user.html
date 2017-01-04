@@ -128,14 +128,22 @@
 			</section>
 			<section class="col-md-3 col-sm-3 col-xs-6 pd-t-15 pd-lr-15">
 				<div class="sec-content-db add-member">
-					<button type="button" class="btn btn-primary btn-circle"><i class="fa fa-user-plus"></i></button>
+					<button id="myBtn" type="button" class="btn btn-primary btn-circle"><i class="fa fa-user-plus"></i></button>
 				</div>
 			</section>
 		</div>
 	</div>
 </section>
 <!-- Add Members -->
+<div id="myModal" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      Ini teks nya lah mana??
+  </div>
+
+</div>
 <!-- /add members-->
 <!-- JAVASCRIPT HERE -->
 <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
@@ -177,16 +185,22 @@
                 }
             });
         });
-        //fixed nav
-        $(window).scroll(function(){
-        	console.log($(window).scrollTop());
-        	if($(window).scrollTop()>320){
-        		$('#asideNav').addClass('fixedNav');
-        	}
-        	if($(window).scrollTop()<320){
-        		$('#asideNav').removeClass('fixedNav');
-        	}
-        });
+        // Get the modal
+		var modal = document.getElementById('myModal');
+		var btn = document.getElementById("myBtn");
+		var span = document.getElementsByClassName("close")[0];
+		btn.onclick = function() {
+		    modal.style.display = "block";
+		}
+		span.onclick = function() {
+		    modal.style.display = "none";
+		}
+
+		window.onclick = function(event) {
+		    if (event.target == modal) {
+		        modal.style.display = "none";
+		    }
+		}
 
 	}) ;
 </script>
