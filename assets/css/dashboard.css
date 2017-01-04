@@ -120,6 +120,9 @@ a.a-fa:hover {
     background: -moz-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
+.team-sec {
+	min-height: 85px;
+}
 .img-profile {
 	padding: 0px !important;
 	margin: 0px !important;
