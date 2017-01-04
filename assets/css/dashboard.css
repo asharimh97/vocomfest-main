@@ -171,9 +171,16 @@ a.a-fa:hover {
 		justify-content: center;
 		background-color: #EBEFF0;
 	}
-		.add-member a i{
-			font-size: 3.4em;
+		.add-member button i{
+			font-size: 2.5em;
 		}
+	.btn-circle {
+		border: none;
+	    border-radius: 100%;
+	    width: 70px;
+	    height: 70px;
+	    background-color: #3498db;
+	}
 /*\
 /*RESPONSIVE STYLE*/
 @media screen and (max-width: 1152px) {
