@@ -291,6 +291,12 @@ html, body {
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out; }
 
+.btn-info {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
 .btn-more {
   color: #3498db;
   text-decoration: none;
@@ -423,6 +429,12 @@ html, body {
     .new-pagination li.disabled a {
       cursor: not-allowed;
       color: #94a4a6; }
+
+.modal-dialog {
+  z-index: 1041; }
+
+.modal-body {
+  overflow: hidden; }
 
 /* Padding and margin setting */
 .mg-5 {
@@ -1423,37 +1435,29 @@ ul.inlinks {
     font-size: 14px; } }
 /*END OD NEW RESPONSIVE STYLE*/
 /*FORM STYLE*/
-input:focus {
+.sign-form input:focus {
   outline: none; }
-
-label {
+.sign-form label {
   font-weight: normal; }
-
-input[type="text"], input[type="password"], input[type="submit"], select {
+.sign-form input[type="text"], .sign-form input[type="password"], .sign-form input[type="submit"], .sign-form select {
   background: none;
   border: none; }
-
-input[type="text"], input[type="password"] {
+.sign-form input[type="text"], .sign-form input[type="password"] {
   border-bottom: 2px solid #3498db;
   width: 95%;
   padding-left: 5px; }
-
-input[type="submit"] {
+.sign-form input[type="submit"] {
   border: 1px solid #3498db;
   width: 100%; }
-
-.inNum input[type="text"] {
+.sign-form .inNum input[type="text"] {
   width: 80%; }
-
-select {
+.sign-form select {
   width: 95%;
   padding: 5px;
   border: 1px solid #3498db; }
-
-input[type="radio"], label span {
+.sign-form input[type="radio"], .sign-form label span {
   float: left; }
-
-label span {
+.sign-form label span {
   width: 90%;
   padding-left: 7px; }
 
@@ -1490,6 +1494,7 @@ label span {
   border-left: 2px solid #3498db; }
 
 /* END OF REGISTER STYLE*/
+/*# sourceMappingURL=signInUp.css.map */
 /* Error Page Css */
 #error-body {
   color: #94a4a6;
@@ -1581,7 +1586,7 @@ label span {
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     border-right: solid 5px transparent; }
-    .nav-db li a:hover {
+    .nav-db li a:hover, .nav-db li a:active, .nav-db li a:focus {
       color: #3498db;
       border-color: #9BCCEE;
       transition: all 0.3s ease-in-out;
@@ -1727,6 +1732,73 @@ a.a-fa:hover {
       font-weight: bold; }
 
 /*END OF CONTENT STYLE*/
+/*DETAIL PAGE STYLE*/
+/* 1 Member page*/
+.add-member {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EBEFF0; }
+
+.add-member button i {
+  font-size: 2.5em; }
+
+.btn-circle {
+  border: none;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  background-color: #3498db; }
+
+.modal-user {
+  display: none;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Modal Content */
+  /* Add Animation */
+  /* The Close Button */ }
+  .modal-user .modal-content {
+    margin: auto;
+    padding: 0;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s; }
+  .modal-user .modal-header {
+    background-color: #3698DB; }
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+  .modal-user .close {
+    color: #FFFFFF;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 1; }
+  .modal-user .close:hover,
+  .modal-user .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer; }
+
+/*\
 /*RESPONSIVE STYLE*/
 @media screen and (max-width: 1152px) {
   .header-db img {
