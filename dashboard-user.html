@@ -126,62 +126,47 @@
 			</section>
 			<section class="col-md-3 col-sm-3 col-xs-6 pd-t-15 pd-lr-15">
 				<div class="sec-content-db add-member">
-					<button id="myBtn" type="button" class="btn btn-primary btn-circle"><i class="fa fa-user-plus"></i></button>
+					<button id="myBtn" type="button" class="btn btn-primary btn-circle" data-toggle="modal" data-target="#addMEmber"><i class="fa fa-user-plus"></i></button>
 				</div>
 			</section>
 		</div>
 	</div>
 </section>
 <!-- Add Members -->
-<div id="myModal" class="modal modal-user">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-  	<div class="modal-header">
-  		<span class="close">&times;</span>
-	    <h2 class="mont-bold wh">Add Members</h2>
-  	</div>
-  	<div class="modal-body">
-	    <form>
-	      	<div class="row">
-	      		<div class="col-md-10">
-					<div class="row mg-b-20">
-						<div class="col-md-5">
-							Member Name 
+<div id="addMEmber" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h3 class="modal-title">Add Member</h3>
+			</div>
+			<div class="modal-body">
+				<div class="col-md-8">
+					<form method="POST" action="">
+						<div class="form-group">
+							<label class="control-label">Member Name : </label>
+							<input type="text" name="name" id="name" value="Member Name" class="form-control" disabled>
 						</div>
-						<div class="col-md-7">
-							: <input type="text" placeholder="Member Name" name="">
+						<div class="form-group">
+							<label class="control-label">Member Email : </label>
+							<input type="text" name="email" id="email" value="member email" class="form-control" disabled>
 						</div>
-					</div>
-								
-					<div class="row mg-b-20">
-						<div class="col-md-5">
-							Member Email 
+						<div class="form-group">
+							<label for="amout" class="control-label">Phone Number : </label>
+							<div class="input-group">
+								<span class="input-group-addon">+62</span>
+								<input type="text" name="amount" id="amount" placeholder="phone number" class="form-control">
+							</div>
 						</div>
-						<div class="col-md-7">
-							: <input type="text" placeholder="member email" name="">
+						<div class="form-group">
+							<input type="submit" name="submit" class="btn btn-info" value="Register" />
 						</div>
-					</div>
-						
-					<div class="row mg-b-20">
-						<div class="col-md-5">
-							Phone Number
-						</div>
-						<div class="inNum col-md-7">
-							: +62 <input type="number" placeholder="phone number" name="">
-						</div>
-					</div>
+					</form>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-3">
-					<input class="no-m btn btn-more mg-bt-15" type="submit" value="REGISTER" name="">
-				</div>
-			</div>
-	      </form>
-	</div>	   
-  </div>
-
+		</div>
+	</div>
 </div>
 <!-- /add members-->
 <!-- Payment and file upload modal -->
@@ -286,23 +271,6 @@
                 }
             });
         });
-
-        // modal box
-		var modal = document.getElementById('myModal');
-		var btn = document.getElementById("myBtn");
-		var span = document.getElementsByClassName("close")[0];
-		btn.onclick = function() {
-		    modal.style.display = "block";
-		}
-		span.onclick = function() {
-		    modal.style.display = "none";
-		}
-
-		window.onclick = function(event) {
-		    if (event.target == modal) {
-		        modal.style.display = "none";
-		    }
-		}
 
 	}) ;
 </script>
