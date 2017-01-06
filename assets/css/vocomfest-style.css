@@ -1936,6 +1936,9 @@ a.a-fa:hover {
   top: -42px;
   font-size: 10px; }
 
+.text-right {
+  text-align: right; }
+
 @media screen and (min-width: 1200px) {
   .sum-content {
     width: 23%; } }
