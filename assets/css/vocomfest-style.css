@@ -374,6 +374,9 @@ html, body {
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out; }
 
+.label-confirm {
+  background: #9b59b6 !important; }
+
 .new-pagination {
   font-family: "Montserrat";
   padding: 0;
