@@ -1662,7 +1662,8 @@ a.a-fa:hover {
 
 #content {
   float: right;
-  background-color: #b3b3b3; }
+  background-color: #ebeff0;
+  min-height: 100vh; }
 
 .content-db {
   background-color: #EBEFF0;
@@ -1937,6 +1938,9 @@ a.a-fa:hover {
 .custom-bar-chart .bar.doted .title {
   top: -42px;
   font-size: 10px; }
+
+.text-right {
+  text-align: right; }
 
 @media screen and (min-width: 1200px) {
   .sum-content {
