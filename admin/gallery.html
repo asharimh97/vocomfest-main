@@ -242,8 +242,11 @@
 							<input type="text" name="team" id="team" value="Enter title here" class="form-control">
 						</div>
 						<div class="form-group">
-							<label for="payment" class="control-label">Image File :</label>
-							<input type="file" id="payment" name="paymentPhoto" class="form-control" />
+							<label for="photoUpload" class="control-label">Image File :</label>
+							<div class="previewPhoto" style="width : 225px ;">
+								<img src="" id="previewGallery">
+							</div>
+							<input type="file" id="photoUpload" name="paymentPhoto" class="form-control" accept=".jpg, .jpeg, .png, .gif" />
 						</div>
 						<div class="form-group">
 							<input type="submit" name="submit" class="btn btn-info" value="Upload" />
@@ -356,6 +359,23 @@
 
 		// tooltip
 		$('[data-toggle="tooltip"]').tooltip(); 
+		$('#previewGallery').hide() ;
+
+		function readUrl(input){
+			if(input.files && input.files[0]){
+				var reader = new FileReader() ;
+
+				reader.onload = function(e){
+					$('#previewGallery').attr('src', e.target.result).show() ;
+				}
+
+				reader.readAsDataURL(input.files[0]) ;
+			}
+		}
+
+		$('#photoUpload').on('change', function(){
+			readUrl(this) ;
+		}) ;
 
 	}) ;
 </script>
