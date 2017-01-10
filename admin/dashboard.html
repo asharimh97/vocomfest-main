@@ -61,12 +61,12 @@
 			    <div class="collapse navbar-collapse nopad" id="asideNav">
 			      <ul class="nav nav-db">
 					<li class="active"><a href="./dashboard.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-					<li><a href="#"><i class="fa fa-users"></i><span>Teams</span></a></li>
+					<li><a href="./teams.html"><i class="fa fa-users"></i><span>Teams</span></a></li>
 					<!-- <li><a href="#"><i class="fa fa-microphone"></i><span>Events</span></a></li> -->
 					<li><a href="./news.html"><i class="fa fa-hourglass-half"></i><span>News</span></a></li>
-					<li><a href="#"><i class="fa fa-camera"></i><span>Gallery</span></a></li>
-					<li><a href="#"><i class="fa fa-credit-card-alt"></i><span>Payments</span></a></li>
-					<li><a href="#"><i class="fa fa-upload"></i><span>Uploads</span></a></li>
+					<li><a href="./gallery.html"><i class="fa fa-camera"></i><span>Gallery</span></a></li>
+					<li><a href="./payments.html"><i class="fa fa-credit-card-alt"></i><span>Payments</span></a></li>
+					<li><a href="./uploads.html"><i class="fa fa-upload"></i><span>Uploads</span></a></li>
 				</ul>
 			    </div>
 			  </div>
@@ -115,60 +115,7 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-12 dash-frame">
-							<div class="dash-header">
-								<h3 class="mont">Statistics</h3>
-								<hr class="bl-line-sep">
-							</div>
-							<div class="custom-bar-chart">
-	                          <div class="bar">
-	                              <div class="title">JAN</div>
-	                              <div style="height: 80%;" class="value tooltips" data-original-title="80%" data-toggle="tooltip" data-placement="top"></div>
-	                          </div>
-	                          <div class="bar doted">
-	                              <div class="title">FEB</div>
-	                              <div style="height: 50%;" class="value tooltips" data-original-title="50%" data-toggle="tooltip" data-placement="top"></div>
-	                          </div>
-	                          <div class="bar ">
-	                              <div class="title">MAR</div>
-	                              <div style="height: 40%;" class="value tooltips" data-original-title="40%" data-toggle="tooltip" data-placement="top"></div>
-	                          </div>
-	                          <div class="bar doted">
-	                              <div class="title">APR</div>
-	                              <div style="height: 55%;" class="value tooltips" data-original-title="55%" data-toggle="tooltip" data-placement="top"></div>
-	                          </div>
-	                          <div class="bar">
-	                              <div class="title">MAY</div>
-	                              <div style="height: 20%;" class="value tooltips" data-original-title="20%" data-toggle="tooltip" data-placement="top"></div>
-	                          </div>
-	                          <div class="bar doted">
-	                              <div class="title">JUN</div>
-	                              <div style="height: 39%;" class="value tooltips" data-original-title="39%" data-toggle="tooltip" data-placement="top"></div>
-	                          </div>
-	                          <div class="bar">
-	                              <div class="title">JUL</div>
-	                              <div style="height: 75%;" class="value tooltips" data-original-title="75%" data-toggle="tooltip" data-placement="top"></div>
-	                          </div>
-	                          <div class="bar doted">
-	                              <div class="title">AUG</div>
-	                              <div style="height: 45%;" class="value tooltips" data-original-title="45%" data-toggle="tooltip" data-placement="top"></div>
-	                          </div>
-	                          <div class="bar ">
-	                              <div class="title">SEP</div>
-	                              <div style="height: 50%;" class="value tooltips" data-original-title="50%" data-toggle="tooltip" data-placement="top"></div>
-	                          </div>
-	                          <div class="bar doted">
-	                              <div class="title">OCT</div>
-	                              <div style="height: 42%;" class="value tooltips" data-original-title="42%" data-toggle="tooltip" data-placement="top"></div>
-	                          </div>
-	                          <div class="bar ">
-	                              <div class="title">NOV</div>
-	                              <div style="height: 60%;" class="value tooltips" data-original-title="60%" data-toggle="tooltip" data-placement="top"></div>
-	                          </div>
-	                          <div class="bar doted">
-	                              <div class="title">DEC</div>
-	                              <div style="height: 90%;" class="value tooltips" data-original-title="90%" data-toggle="tooltip" data-placement="top"></div>
-	                          </div>
-	                      </div>
+							<div id="chart-container" class="pd-bt-15" style="width :100% ; height : 400px ;"></div>
 						</div>
 					</div>
 				</div>
@@ -324,7 +271,68 @@
             });
         });
 
+        $(function () {
+		    Highcharts.chart('chart-container', {
+		        chart: {
+		            type: 'column'
+		        },
+		        title: {
+		            text: 'Statistik Pendaftar'
+		        },
+		        subtitle: {
+		            text: 'sumber : data panitia'
+		        },
+		        xAxis: {
+		            categories: [
+		                'Feb',
+		                'Mar',
+		                'Apr',
+		            ],
+		            crosshair: true
+		        },
+		        yAxis: {
+		            min: 0,
+		            title: {
+		                text: 'Jumlah Pendaftar'
+		            }
+		        },
+		        tooltip: {
+		            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+		            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+		                '<td style="padding:0"><b>{point.y:.0f} orang</b></td></tr>',
+		            footerFormat: '</table>',
+		            shared: true,
+		            useHTML: true
+		        },
+		        plotOptions: {
+		            column: {
+		                pointPadding: 0.2,
+		                borderWidth: 0
+		            }
+		        },
+		        series: [{
+		            name: 'WDC',
+		            data: [20,20,10]
+
+		        }, {
+		            name: 'ICPC',
+		            data: [20,15,19]
+
+		        }, {
+		            name: 'MADC',
+		            data: [30,5,0]
+
+		        }, {
+		            name: 'Semnas',
+		            data: [42,80,20]
+
+		        }]
+		    });
+		});
+
 	}) ;
 </script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
 </body>
 </html>

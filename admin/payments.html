@@ -27,8 +27,6 @@
 	<!-- JAVASCRIPT HERE -->
 	<script type="text/javascript" src="../assets/js/jquery.js"></script>
 	<script type="text/javascript" src="../assets/js/loader.js"></script>
-	<script type="text/javascript" src="../assets/plugins/tinymce/tinymce.min.js" ></script>
-    <script type="text/javascript" src="../assets/plugins/tinymce/init-tinymce.js" ></script>
 </head>
 <body>
 <section id="aside" class="col-md-2 col-sm-2 nopad">
@@ -65,9 +63,9 @@
 					<li><a href="./dashboard.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
 					<li><a href="./teams.html"><i class="fa fa-users"></i><span>Teams</span></a></li>
 					<!-- <li><a href="#"><i class="fa fa-microphone"></i><span>Events</span></a></li> -->
-					<li class="active"><a href="./news.html"><i class="fa fa-hourglass-half"></i><span>News</span></a></li>
+					<li><a href="./news.html"><i class="fa fa-hourglass-half"></i><span>News</span></a></li>
 					<li><a href="./gallery.html"><i class="fa fa-camera"></i><span>Gallery</span></a></li>
-					<li><a href="./payments.html"><i class="fa fa-credit-card-alt"></i><span>Payments</span></a></li>
+					<li class="active"><a href="./payments.html"><i class="fa fa-credit-card-alt"></i><span>Payments</span></a></li>
 					<li><a href="./uploads.html"><i class="fa fa-upload"></i><span>Uploads</span></a></li>
 				</ul>
 			    </div>
@@ -85,59 +83,15 @@
 			<div class="top-header">
 				<span>Hello, Administrator Name | <a class="a-fa" href="./login.html"><i class="fa fa-sign-out"></i> Logout</a></span>
 			</div>
-			<h2 class="mont-bold">News</h2>
+			<h2 class="mont-bold">Payments</h2>
 			<hr class="bl-line-sep">
 		</section>
 	</header>
-	<!-- NEWS CONTENT -->
 	<div class="content-db">
 		<div class="row">
-			<section class="col-md-12 pd-t-15 pd-lr-15">
-				<div class="sec-content-db">
-					<div class="div-content-db">
-						<form method="" action="">
-							<h3 class="nomag">Add New Post</h3>
-							<div class="row mg-t-20">
-								<div class="col-md-8">
-									<input type="text" name="title" id="title" placeholder="Enter News Title Here" class="form-control">
-								</div>
-								<div class="col-md-4 text-right">
-									<span>Categories : </span>
-									<label>
-										<select class="form-control" id="categories">
-											<option value="1">Categories 1</option>
-											<option value="2">Categories 2</option>
-											<option value="3">Categories 3</option>
-											<option value="4">Categories 4</option>
-										</select>
-									</label>
-								</div>
-							</div>
-							<div class="row mg-t-20">
-								<div class="col-md-12">
-									<textarea class="tinymce"></textarea>
-								</div>
-							</div>
-							<div class="row mg-t-20">
-								<div class="col-md-12">
-									<label>
-		                            	<input type="submit" value="Save Draft" name="" class="btn btn-sm btn-default">
-		                            </label>
-		                            <label>
-		                            	<input type="submit" value="Preview" name="" class="btn btn-sm btn-default">
-		                            </label>
-		                            <label>
-		                            	<input type="submit" value="Publish" name="" class="btn btn-sm btn-info">
-		                            </label>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</section>
+			
 		</div>
 	</div>
-<!-- /NEWS CONTENT -->
 </section>
 <!-- JAVASCRIPT HERE -->
 <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
@@ -181,8 +135,6 @@
                 }
             });
         });
-
-		// search function
 
 	}) ;
 </script>
